@@ -1,0 +1,11 @@
+OpenSoft 2014 by MS Hall of Residence
+Bronze Winning Team
+Run Tabpage.py, has lots of libraries. So almost impossible to run, unless
+PyQt4, OpenCV, numpy etc. are available. Binaries will be made available
+soon. If not mail me(thisisma08@gmail.com) to get the binaries.
+
+
+My contribution to the project was the GUI (Tabpage.py) and the backend code
+related to OverlappingArea
+
+
