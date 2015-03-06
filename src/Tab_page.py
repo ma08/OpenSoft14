@@ -1,6 +1,6 @@
 import sys, random
 from PyQt4 import QtCore, QtGui
-from msilib.schema import Shortcut
+#from msilib.schema import Shortcut
 
 '''
 Created on Mar 13, 2014
@@ -21,7 +21,7 @@ import sys
 import time
 import Match
 import re
-import winsound
+#import winsound
 #from Match import *
 from PyQt4.Qt import QLabel, QTableWidget, QWidget, QIcon
 
@@ -433,7 +433,7 @@ class TableWidget(QTableWidget):
             event.accept()
             for url in event.mimeData().urls():
                 x=str(url.toLocalFile())
-                winsound.PlaySound('beep.wav' , winsound.SND_FILENAME)
+                #winsound.PlaySound('beep.wav' , winsound.SND_FILENAME)
                 x=x.replace('/', '\\')
                 #x=x.decode()
                 print(x)
@@ -961,10 +961,10 @@ class MainWindow(QWidget):
         self.setLayout(self.l)
         self.row=-1
         
-        QtGui.QShortcut(QtGui.QKeySequence("Ctrl+F"), self, self.openfile)
-        QtGui.QShortcut(QtGui.QKeySequence("Ctrl+D"), self, self.opendir)
+        #QtGui.QShortcut(QtGui.QKeySequence("Ctrl+F"), self, self.openfile)
+        #QtGui.QShortcut(QtGui.QKeySequence("Ctrl+D"), self, self.opendir)
         
-        QtGui.QShortcut(QtGui.QKeySequence("del"), self, self.delete_and_drawagain)
+        #QtGui.QShortcut(QtGui.QKeySequence("del"), self, self.delete_and_drawagain)
         
         
         
@@ -1316,7 +1316,7 @@ class MainWindow(QWidget):
             
     def delete_and_drawagain(self):
         #winsound.PlaySound('papercrumble.wav' , winsound.SND_FILENAME) 
-        winsound.PlaySound('beep.wav' , winsound.SND_FILENAME)
+        #winsound.PlaySound('beep.wav' , winsound.SND_FILENAME)
         self.tableWidget.dragging_cells=False
         lowest=100000000
         lowest_row=0
